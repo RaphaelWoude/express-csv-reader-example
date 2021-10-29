@@ -19,7 +19,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
   const results = [];
   fs.createReadStream(req.file.path)
-    .pipe(csv({ separator: ';' }))
+    .pipe(csv({ separator: ',' }))
     .on('data', (data) => results.push(data))
     .on('end', () => res.status(200).send(results));
 })
