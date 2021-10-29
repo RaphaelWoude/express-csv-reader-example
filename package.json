@@ -1,0 +1,14 @@
+{
+  "name": "express-csv-reader-example",
+  "version": "1.0.0",
+  "description": "Express CSV Reader Example",
+  "author": "Raphael van der Woude",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.3"
+  }
+}
